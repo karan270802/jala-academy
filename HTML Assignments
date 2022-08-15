@@ -1,0 +1,566 @@
+1. Understand the basics.html which was already created.
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Q1 HTML basics</h1>
+    <h2>This is heading 1</h2>
+    <h3>This is heading 2</h3>
+    <h4>This is heading 3</h4>
+    <p>My first paragraph. </p>
+  </body>
+</html>
+
+
+2. Develop your own web page basics.html with all the following html tags Html, head, title, body Heading, Paragraph, Italic, Bold, Anchor, Unordered List, List Item, label, Blockquote, Horizontal rule, Image, Division, Span.
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Q2 Own webpage with a lot of stuff</h1>
+    <! --heading-->
+
+    <p><b>My first paragraph. </b></p>
+    <! --paragraph-->
+    <i>This is my second paragraph</i>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      >Super serious stuff<! --link-->
+    </a>
+    <hr />
+    <ul>
+      <li>This is</li>
+      <li>An Unordered</li>
+      <! --unordered list-->
+      <li>List</li>
+    </ul>
+    <ol>
+      <li>First we do this, </li>
+      <li>and then we do this, </li>
+      <li>and then we do this. </li>
+    </ol>
+    <blockquote>this is a blockquote</blockquote>
+    <! --blockquote-->
+    <div>This is div block</div>
+    <! --div-->
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg"
+    /><! --image-->
+  </body>
+</html>
+
+
+3. Navigate within the page to a different section.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section links</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      . section 
+       {
+        width: 100vw;
+        height: 40vh;
+        background-colour: #ef5354;
+        font-size: 50px;
+        colour: white;
+        text-align: center;
+        margin: 10px 5px;
+      }
+
+      .one,
+      . three 
+       {
+        background-colour: #e03b8b;
+       }
+
+      .nav 
+       {
+        width: 100vw;
+        height: 40vh;
+        background-colour: #3944f7;
+        font-size: x-large;
+        colour: white;
+        text-align: center;
+        margin: 10px 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        place-items: center;
+      }
+
+      .btn 
+       {
+        colour: white;
+        background-colour: #38cc77;
+        height: 40px;
+        width: 90px;
+        padding: 2px;
+        border: 2px solid black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <a href="#section1" class="btn">1</a>
+      <a href="#section2" class="btn">2</a>
+      <a href="#section3" class="btn">3</a>
+      <a href="#section4" class="btn">4</a>
+    </div>
+    <div class="section one" id="section1">section 1</div>
+    <div class="section two" id="section2">section 2</div>
+    <div class="section three" id="section3">section 3</div>
+    <div class="section four" id="section4">section 4</div>
+  </body>
+</html>
+
+
+4. Use pseudo classes and elements into your webpage.
+
+<html>
+<head>
+<style>
+q: lang(no) {
+  quotes: "~" "~";
+}
+</style>
+</head>
+<body>
+
+<p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+
+</body>
+</html>
+
+
+Input Attributes and Restrictions
+
+1. Design the web page using all the below input attributes type =text, password, submit, reset, radio, checkbox, button.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Using input attributes like text, password, submit, reset, radio,
+      checkbox, button,
+    </h1>
+    <br>
+
+    <textarea></textarea>
+
+    <textarea rows="4"></textarea>
+
+    <textarea rows="4" cols="30"></textarea>
+    </br>
+    <br>
+    <form>
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" />
+    </form>
+    </br>
+    <br><input type="submit" /></br>
+   <br> <input type="reset" /></br>
+
+    <input type="radio" name="gender" id="male" />
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" id="female" />
+    <label for="female">Female</label>
+    <label> <input type="checkbox" />: Bike</label>
+    <label> <input type="checkbox" />: Car</label>
+    <button>Button</button>
+  </body>
+</html>
+
+
+2. HTML5 input Types type=number, range, colour, date, file, time, month, week, email.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Using input attributes like number, range, colour, date, file, time,
+      month, week, email
+    </h1>
+    <form>
+      <label for="quantity">Quantity (between 1 and 5):</label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        max="5"
+      />
+    </form>
+    <br />
+    <form>
+      <label for="vol">Volume (between 0 and 50) :</label>
+      <input
+        type="range"
+        id="vol"
+        name="vol"
+        min="0"
+        max="50"
+      />
+    </form>
+    <br />
+    <form>
+      <label for="favcolor">Select your favourite colour:</label
+      >
+      <input type="colour" id="favcolor" name="favcolor" />
+    </form>
+    <br />
+    <form>
+      <label for="birthday">Birthday:</label>
+      <input
+        type="date"
+        id="birthday"
+        name="birthday"
+      />
+    </form>
+    <br />
+    <form>
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile" />
+    </form>
+    <br />
+    <form>
+      <label for="appt">Select a time:</label>
+      <input type="time" id="appt" name="appt" />
+    </form>
+    <br />
+    <form>
+      <label for="bdaymonth">Birthday (month and year) :</label>
+      <input
+        type="month"
+        id="bdaymonth"
+        name="bdaymonth"
+      />
+    </form>
+    <br />
+    <form>
+      <label for="week">Select a week:</label>
+      <input type="week" id="week" name="week" />
+    </form>
+    <br />
+    <form>
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email" />
+    </form>
+    <br />
+  </body>
+</html>
+
+
+3. Apply all the below input restrictions disabled, max, maxlength, min, read only, required, size, value.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Using input restrictions like disabled, max, maxlength, min, read only,
+      required, size, value
+    </h1>
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" disabled /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" />
+    </form>
+    <br />
+    <form>
+      <label for="datemax">Enter a date before 1980-01-01:</label
+      >
+      <input
+        type="date"
+        id="datemax"
+        name="datemax"
+        max="1979-12-31"
+      /><br /><br />
+
+      <label for="datemin">Enter a date after 2000-01-01:</label
+      >
+      <input
+        type="date"
+        id="datemin"
+        name="datemin"
+        min="2000-01-02"
+      /><br /><br />
+
+      <label for="quantity">Quantity (between 1 and 5) :</label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        min="1"
+        max="5"
+      />
+    </form>
+    <br />
+    <form>
+      <label for="fname">First name:</label
+      ><br />
+      <input type="text" id="fname" name="fname" size="50" /><br />
+      <label for="pin">PIN:</label><br />
+      <input type="text" id="pin" name="pin" maxlength="4" size="4" />
+    </form>
+    <br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" read only /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" />
+    </form>
+    <br />
+    <form>
+      <label for="username">Username:</label
+      >
+      <input type="text" id="username" name="username" required />
+    </form>
+    <br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" size="50" /><br />
+      <label for="pin">PIN:</label><br />
+      <input type="text" id="pin" name="pin" size="4" />
+    </form>
+    <br />
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Doe" />
+    </form>
+  </body>
+</html>
+
+
+4. Develop a web page using target attribute.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <h1>Target Attribute</h1>
+  <body>
+    <a href="https://jalatechnologies.com/" target="_blank">Visit JALA TECH</a
+    >
+  </body>
+</html>
+
+
+5. Use I-frames and Marquee in your webpage.
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>iframe and marquee</h1>
+
+    <iframe src="https://jalatechnologies.com" title="A job for everyone"
+      >
+    </iframe>
+    <marquee>This is a basic marquee</marquee
+    >
+  </body>
+</html>
+
+
+Semantic Elements
+
+1.	Develop a web page with non-semantic elements <div> and <span>.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Div tag</title>
+
+    <style>
+      div 
+      {
+        colour: white;
+        background-colour: #009900;
+        margin: 2px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>div tag take the whole line</div>
+    <div>div tag take the whole line</div>
+    <div>div tag take the whole line</div>
+
+    <h2>This is span tag it won't take the whole line</h2>
+
+    <p>
+      <span style="background-colour: light green"> Lorem, ipsum. </span> Lorem
+      ipsum dolour sit amet consectetur adipisicing.<span style="colour: blue"
+        >
+        Lorem</span
+      >
+      LOrem ipsum <span style="background-colour: light blue">articles</span>
+      Lorem ipsum dolour, sit amet consectetur adipisicing.
+    </p>
+  </body>
+</html>
+
+
+2.	Develop a web page with the semantic elements <form>, <table> and <article>.
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Article and Table semantic elements</h1>
+
+    <article>
+      <h2>Lorem, ipsum dolour. </h2>
+      <p>
+        Lorem ipsum dolour sit amet consectetur adipisicing elit. Saepe explicabo
+        option labore quisquam numquam ipsam dignissimos incidunt quis.
+      </p>
+    </article>
+
+    <article>
+      <h2>Lorem, ipsum. </h2>
+      <p>
+        Lorem ipsum dolour sit amet consectetur adipisicing elit. Molestiae
+        voluptatibus enim cumque cum quae nihil, quis fuga itaque deserunt
+        exercitationem!
+      </p>
+    </article>
+
+    <article>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolour sit, amet consectetur adipisicing elit. Similique
+        accusamus deserunt aspernatur qui odit eaque velit perferendis!
+      </p>
+    </article>
+    <table>
+      
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr>
+        <td>Centro commercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+
+3. Use all the HTML5 tags and develop a web page article, aside, fig caption, figure, footer, header, hgroup, mark, nav, section, time.
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <p>Top Stories</p>
+      <section>
+        <p>News</p>
+        <article>Story 1</article>
+        <article>Story 2</article>
+        <article>Story 3</article>
+      </section>
+      <section>
+        <p>Sport</p>
+        <article>Story 1</article>
+        <article>Story 2</article>
+        <article>Story 3</article>
+      </section>
+    </section>
+    <br />
+    <aside>
+      <p>
+        This is a sidebar, for example a terminology definition or a short
+        background to a historical figure.
+      </p>
+    </aside>
+    <figure>
+      <img
+        src="https://en.wikipedia.org/wiki/File:Shadow_of_Mordor_cover_art.jpg"
+        alt="Shadow of Mordor"
+      />
+      <fig caption>Cover art for Middle earth: Shadow of Mordor</fig caption>
+    </figure>
+    <footer>&copy; Company A</footer>
+    <header>
+      <h1>Company A</h1>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact us</a></li>
+      </ul>
+      <form target="/search">
+        <input name="q" type="search" />
+        <input type="submit" />
+      </form>
+    </header>
+    <hgroup>
+      <h1>Heading 1</h1>
+      <h2>Subheading 1</h2>
+      <h2>Subheading 2</h2>
+    </hgroup>
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact us</a></li>
+      </ul>
+    </nav>
+    <time datetime="2017-10-31T11:21:00+02:00">Tuesday, 31 October 2017</time>
+  </body>
+</html>
